@@ -1,0 +1,21 @@
+﻿@page
+<link rel="stylesheet" href="~/lib/Chart.js/Chart.css" />
+<div class="container">
+    <div class="row">
+        <div class="row">
+            Sample queries
+            <ul>
+                <li><a href="~/?metric=cpu-usage">CPU Usage</a></li>
+                <li><a href="~/?metric=working-set">Working Set</a></li>
+                <li><a href="~/?metric=alloc-rate">Allocation Rate</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <canvas id="chart0" style="width:512px;height:320px"></canvas>
+        </div>
+    </div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/lib/Chart.js/Chart.bundle.js"></script>
+<script src="~/js/metrics.js"></script>
